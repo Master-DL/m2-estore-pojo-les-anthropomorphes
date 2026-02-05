@@ -5,7 +5,7 @@ import estorePojo.exceptions.InvalidCartException;
 import estorePojo.exceptions.UnknownAccountException;
 import estorePojo.exceptions.UnknownItemException;
 
-public class Client implements Runnable {
+public class Client implements Runnable, IClient {
 
     private Store store;
 

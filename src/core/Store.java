@@ -1,4 +1,4 @@
-package core;
+package core.services;
 
 	import java.util.HashMap;
 import java.util.Iterator;
@@ -10,7 +10,7 @@ import estorePojo.exceptions.InvalidCartException;
 import estorePojo.exceptions.UnknownAccountException;
 import estorePojo.exceptions.UnknownItemException;
 
-public class Store {
+public class Store implements IStore, IStoreCart {
 
 	    private Provider provider;
 	    private Bank bank;
@@ -18,8 +18,8 @@ public class Store {
 	    /**
 	     * Constructs a new StoreImpl
 	     */
-	    public Store(Provider prov, Bank bk) {
-	        provider = prov;
+	    public Store(Provider pv, Bank bk) {
+	        provider = pv;
 	        bank = bk;
 	    }
 

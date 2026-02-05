@@ -1,10 +1,11 @@
-package core;
+package core.services;
 
 import estorePojo.exceptions.InsufficientBalanceException;
 import estorePojo.exceptions.UnknownAccountException;
 
-public class Bank {
+public class Bank implements IBank {
 
+	// TODO List Account et ajout methode addAccount
 	private Account estore;
 	private Account anne, bob;
 
